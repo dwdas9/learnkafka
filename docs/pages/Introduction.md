@@ -48,9 +48,16 @@ That's it. Master these and you understand Kafka.
 
 ## What Is a Producer?
 
-A producer is any application or script that sends data into Kafka. It's code you write. Now, you may get confused by thinking Twitter, weather channels, cryto price sites are producers.They are data sources and not *producers*. But, actually they are not Producers as they don't write these data to your Kafka.The producer is actually the code you write to fetch data from these sites and write to your kafka. The one who has the access to your system.
+A **Producer** is **not** the data source.
 
-![](images/20251205220409.png)
+* **Data Sources** (like Twitter, Coinbase, or a weather API) merely **generate** the raw data.
+* The **Kafka Producer** is the **code you write** (your script or application) that acts as the **bridge**. Its only job is to **fetch** the data from the source, process it, and **write** it directly into your Kafka topic.
+
+**Simply put:** The Producer is the program you write with access to your Kafka system, not the external website.
+
+![](images/20251205220912.png)
+
+Let's look at some examples of Kafka Producer Scripts:
 
 **Example 1: Python script tracking crypto prices**
 
