@@ -1,15 +1,15 @@
 # Project 3: Fraud Detection Analytics Pipeline
 
-## 🎯 Project Overview
+## Project Overview
 
 Build a real-time fraud detection system using Kafka Streams with windowing and pattern matching.
 
 **Duration:** 4-5 hours  
-**Difficulty:** ⭐⭐⭐⭐☆ (Advanced)
+**Difficulty:** ⭐⭐⭐⭐ (Advanced)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -23,7 +23,7 @@ graph TB
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
 - Kafka Streams fundamentals
 - Windowing (tumbling, hopping, session)
@@ -33,7 +33,7 @@ graph TB
 
 ---
 
-## 🚨 Fraud Rules
+## Fraud Rules
 
 1. **Velocity Check:** > 5 transactions in 10 minutes
 2. **Amount Check:** Transaction > $10,000
@@ -42,7 +42,7 @@ graph TB
 
 ---
 
-## 💻 Kafka Streams Implementation
+## Kafka Streams Implementation
 
 ```java
 KStream<String, Transaction> transactions = builder.stream("transactions");

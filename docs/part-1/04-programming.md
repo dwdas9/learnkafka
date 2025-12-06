@@ -1,12 +1,12 @@
 # Chapter 4: Programming with Kafka
 
-## 🎯 Write Your First Producer & Consumer
+## Write Your First Producer & Consumer
 
 Learn to interact with Kafka using code (Java and Python examples provided).
 
 ---
 
-## 🐍 Python Setup
+## Python Setup
 
 ```bash
 pip install kafka-python
@@ -14,7 +14,7 @@ pip install kafka-python
 
 ---
 
-## 📤 Building a Producer
+## Building a Producer
 
 ### Basic Producer (Python)
 
@@ -65,7 +65,7 @@ producer.send('orders', key='user-123', value={'order': 'data'})
 
 ---
 
-## 📥 Building a Consumer
+## Building a Consumer
 
 ### Basic Consumer (Python)
 
@@ -119,7 +119,7 @@ for message in consumer:
 
 ---
 
-## ⚙️ Producer Configuration
+## Producer Configuration
 
 ### Acknowledgments (acks)
 
@@ -136,11 +136,9 @@ producer = KafkaProducer(
 |------|----------|----------|
 | `0` | Fire and forget | Metrics, logs (OK to lose) |
 | `1` | Leader acknowledges | Balanced (default) |
-| `all` | All replicas acknowledge | Critical data |
+| `all` | All replicas acknowledge | Critical data | ---
 
----
-
-## 🔄 Idempotent Producer
+## Idempotent Producer
 
 Ensures exactly-once semantics (no duplicates even with retries).
 
@@ -155,7 +153,7 @@ producer = KafkaProducer(
 
 ---
 
-## 🎯 Mini Project #2: Order Events System
+## Mini Project #2: Order Events System
 
 **Goal:** Build a publisher that sends order events, and an analytics consumer that processes them.
 
@@ -264,7 +262,7 @@ python order_producer.py
 
 ---
 
-## ☕ Java Examples
+## Java Examples
 
 === "Producer (Java)"
     ```java
@@ -341,7 +339,7 @@ python order_producer.py
 
 ---
 
-## 🎓 Key Takeaways
+## Key Takeaways
 
 !!! tip "Remember"
     - Use **acks='all'** for critical data

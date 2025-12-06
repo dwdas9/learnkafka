@@ -1,6 +1,6 @@
 # Chapter 1: Why Kafka? The Problem It Solves
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By the end of this chapter, you'll understand:
 
@@ -11,7 +11,7 @@ By the end of this chapter, you'll understand:
 
 ---
 
-## 🔍 The Problem: Traditional Systems Break at Scale
+## The Problem: Traditional Systems Break at Scale
 
 ### Scenario 1: The E-Commerce Nightmare
 
@@ -29,14 +29,14 @@ graph LR
 **Problems with direct API calls:**
 
 !!! danger "Pain Points"
-    - 🔥 If one service is down, the whole order fails
-    - 🐌 Slow services delay the entire flow
-    - 📈 Scaling is a nightmare (tight coupling)
-    - 🔄 Adding new services requires changing code everywhere
+    -  If one service is down, the whole order fails
+    -  Slow services delay the entire flow
+    -  Scaling is a nightmare (tight coupling)
+    -  Adding new services requires changing code everywhere
 
 ---
 
-## 💡 The Kafka Solution
+## The Kafka Solution
 
 Kafka acts as an **event backbone** — a central nervous system for your architecture.
 
@@ -53,14 +53,14 @@ graph LR
 **Benefits:**
 
 !!! success "Kafka Advantages"
-    - ✅ **Decoupling:** Services don't know about each other
-    - ✅ **Resilience:** Failed services can catch up later
-    - ✅ **Scalability:** Add consumers without touching producers
-    - ✅ **Replay:** Reprocess events anytime (like a DVR for data)
+    -  **Decoupling:** Services don't know about each other
+    -  **Resilience:** Failed services can catch up later
+    -  **Scalability:** Add consumers without touching producers
+    -  **Replay:** Reprocess events anytime (like a DVR for data)
 
 ---
 
-## 🌍 Real-World Use Cases
+## Real-World Use Cases
 
 === "E-Commerce"
     - Order processing pipelines
@@ -84,7 +84,7 @@ graph LR
 
 ---
 
-## ⚠️ When NOT to Use Kafka
+## When NOT to Use Kafka
 
 !!! warning "Kafka Isn't Always the Answer"
     **Don't use Kafka if:**
@@ -96,18 +96,16 @@ graph LR
 
 ---
 
-## 📊 Kafka vs Alternatives
+## Kafka vs Alternatives
 
 | Feature | Kafka | RabbitMQ | AWS SNS/SQS | REST APIs |
 |---------|-------|----------|-------------|-----------|
 | **Throughput** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
-| **Replay** | ✅ Yes | ❌ No | ❌ No | ❌ No |
-| **Ordering** | ✅ Per Partition | ⚠️ Limited | ❌ No | ✅ Yes |
-| **Complexity** | 🔴 High | 🟡 Medium | 🟢 Low | 🟢 Low |
+| **Replay** | Yes | No | No | No |
+| **Ordering** | Per Partition | Limited | No | Yes |
+| **Complexity** | High | Medium | Low | Low | ---
 
----
-
-## 🎓 Key Takeaways
+## Key Takeaways
 
 !!! tip "Remember"
     - Kafka is an **event streaming platform**, not just a message queue

@@ -1,6 +1,6 @@
 # Chapter 2: Core Concepts You Must Know
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 Master the essential Kafka building blocks:
 
@@ -11,7 +11,7 @@ Master the essential Kafka building blocks:
 
 ---
 
-## 📚 The Kafka Mental Model
+## The Kafka Mental Model
 
 Think of Kafka as a **distributed append-only log** system.
 
@@ -25,7 +25,7 @@ graph TB
 
 ---
 
-## 🗂️ Topics: Event Categories
+## Topics: Event Categories
 
 A **topic** is like a folder or database table — it holds events of a specific type.
 
@@ -45,7 +45,7 @@ kafka-topics --create --topic orders \
 
 ---
 
-## 🗃️ Partitions: The Secret to Scale
+## Partitions: The Secret to Scale
 
 Topics are split into **partitions** — parallel lanes for events.
 
@@ -63,7 +63,7 @@ Topic: orders
 
 ---
 
-## 🔢 Offsets: Message IDs
+## Offsets: Message IDs
 
 Each message in a partition gets a unique **offset** (like an index).
 
@@ -78,7 +78,7 @@ Consumers track their position using offsets.
 
 ---
 
-## 📤 Producers: Event Writers
+## Producers: Event Writers
 
 Producers **publish events** to topics.
 
@@ -105,7 +105,7 @@ producer.flush()
 
 ---
 
-## 📥 Consumers: Event Readers
+## Consumers: Event Readers
 
 Consumers **subscribe to topics** and process events.
 
@@ -127,7 +127,7 @@ for message in consumer:
 
 ---
 
-## 👥 Consumer Groups: Parallel Processing
+## Consumer Groups: Parallel Processing
 
 Multiple consumers with the **same group ID** share the workload.
 
@@ -147,7 +147,7 @@ Consumer 3 → reads Partition 2
 
 ---
 
-## 🖥️ Brokers & Clusters
+## Brokers & Clusters
 
 A **broker** is a Kafka server. A **cluster** is multiple brokers working together.
 
@@ -172,7 +172,7 @@ If Broker 1 fails, Broker 2 becomes the new leader.
 
 ---
 
-## 🧩 Putting It All Together
+## Putting It All Together
 
 ```mermaid
 graph TB
@@ -201,7 +201,7 @@ graph TB
 
 ---
 
-## 🎓 Key Takeaways
+## Key Takeaways
 
 !!! tip "Remember"
     - **Topics** organize events by type

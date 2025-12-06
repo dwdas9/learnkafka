@@ -1,15 +1,15 @@
 # Project 1: Real-time Order Tracking System
 
-## 🎯 Project Overview
+## Project Overview
 
 Build an end-to-end order tracking system where customers can see real-time updates as their orders move through different stages.
 
 **Duration:** 2-3 hours  
-**Difficulty:** ⭐⭐☆☆☆ (Beginner)
+**Difficulty:** ⭐⭐ (Beginner)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -28,7 +28,7 @@ graph TB
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
 - [x] Topic design for event-driven workflows
 - [x] Producer implementation (multiple services)
@@ -38,7 +38,7 @@ graph TB
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Backend:** Python (FastAPI) or Java (Spring Boot)
 - **Kafka:** Docker Compose
@@ -47,7 +47,7 @@ graph TB
 
 ---
 
-## 📝 Step 1: Design Events
+## Step 1: Design Events
 
 ### Order Event Schema
 
@@ -78,7 +78,7 @@ Retention: 7 days
 
 ---
 
-## 💻 Step 2: Setup Infrastructure
+## Step 2: Setup Infrastructure
 
 ### Docker Compose
 
@@ -117,7 +117,7 @@ docker-compose up -d
 
 ---
 
-## 📤 Step 3: Build Producers
+## Step 3: Build Producers
 
 ### Order API (order_service.py)
 
@@ -196,12 +196,12 @@ def simulate_warehouse():
             }
             
             producer.send('orders', key=event['order_id'], value=packed_event)
-            print(f"✅ Packed: {event['order_id']}")
+            print(f" Packed: {event['order_id']}")
 ```
 
 ---
 
-## 📥 Step 4: Build Consumers
+## Step 4: Build Consumers
 
 ### Notification Service
 
@@ -221,7 +221,7 @@ def notification_service():
         status = event['event_type'].split('.')[1]
         
         # Send notification (email/SMS)
-        print(f"📧 Notifying {customer_id}: Order {event['order_id']} is {status}")
+        print(f" Notifying {customer_id}: Order {event['order_id']} is {status}")
         
         # In real app: send_email() or send_sms()
 ```
@@ -250,12 +250,12 @@ def analytics_service():
         status = event['event_type'].split('.')[1]
         stats[status] += 1
         
-        print(f"📊 Stats: {stats}")
+        print(f" Stats: {stats}")
 ```
 
 ---
 
-## 🧪 Step 5: Test the System
+## Step 5: Test the System
 
 ### Test Script
 
@@ -298,7 +298,7 @@ python test_orders.py
 
 ---
 
-## 🎯 Success Criteria
+## Success Criteria
 
 - [ ] Orders created via API
 - [ ] Events published to Kafka
@@ -309,7 +309,7 @@ python test_orders.py
 
 ---
 
-## 🚀 Extensions
+## Extensions
 
 1. **Add Web UI** — Real-time dashboard with WebSocket
 2. **Add Shipping/Delivery** — Complete the workflow
@@ -319,7 +319,7 @@ python test_orders.py
 
 ---
 
-## 📦 Complete Code
+## Complete Code
 
 [Download full project →](https://github.com/dwdas9/learnkafka/tree/main/projects/order-tracking)
 

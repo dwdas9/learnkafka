@@ -1,12 +1,12 @@
 # Kafka Cheat Sheets
 
-## 🚀 Quick Reference
+## Quick Reference
 
 Essential commands and configurations for daily Kafka operations.
 
 ---
 
-## 📋 Topic Management
+## Topic Management
 
 ```bash
 # Create topic
@@ -31,7 +31,7 @@ kafka-topics --alter --topic my-topic --partitions 6 --bootstrap-server localhos
 
 ---
 
-## 📤 Producer Commands
+## Producer Commands
 
 ```bash
 # Console producer
@@ -54,7 +54,7 @@ kafka-producer-perf-test \
 
 ---
 
-## 📥 Consumer Commands
+## Consumer Commands
 
 ```bash
 # Console consumer (from beginning)
@@ -76,7 +76,7 @@ kafka-console-consumer --topic my-topic \
 
 ---
 
-## 👥 Consumer Group Management
+## Consumer Group Management
 
 ```bash
 # List groups
@@ -98,7 +98,7 @@ kafka-consumer-groups --reset-offsets --to-offset 100 \
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### Producer Config (Python)
 
@@ -139,7 +139,7 @@ consumer = KafkaConsumer(
 
 ---
 
-## 🛡️ Security
+## Security
 
 ### SSL Config
 
@@ -167,7 +167,7 @@ producer = KafkaProducer(
 
 ---
 
-## 📊 Monitoring
+## Monitoring
 
 ```bash
 # Check broker logs
@@ -185,7 +185,7 @@ kafka-run-class kafka.tools.GetOffsetShell \
 
 ---
 
-## 🔑 Common Patterns
+## Common Patterns
 
 ### At-Least-Once Processing
 
@@ -213,7 +213,7 @@ except:
 
 ---
 
-## 🐳 Docker Compose
+## Docker Compose
 
 ```yaml
 version: '3.8'
@@ -240,7 +240,7 @@ services:
 
 ---
 
-## 📥 Download
+## Download
 
 [Download PDF Cheat Sheet →](#)
 

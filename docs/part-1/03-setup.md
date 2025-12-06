@@ -1,12 +1,12 @@
 # Chapter 3: Setup in 10 Minutes
 
-## 🎯 Quick Start with Docker
+## Quick Start with Docker
 
 Get Kafka running locally in minutes using Docker Compose.
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Docker Desktop installed
 - 8GB RAM available
@@ -14,7 +14,7 @@ Get Kafka running locally in minutes using Docker Compose.
 
 ---
 
-## 🚀 Step 1: Docker Compose Setup
+## Step 1: Docker Compose Setup
 
 Create `docker-compose.yml`:
 
@@ -50,7 +50,7 @@ docker-compose up -d
 
 ---
 
-## ✅ Step 2: Verify Installation
+## Step 2: Verify Installation
 
 ```bash
 # Check running containers
@@ -61,7 +61,7 @@ docker ps
 
 ---
 
-## 📝 Step 3: Create Your First Topic
+## Step 3: Create Your First Topic
 
 ```bash
 # Create a topic named "test"
@@ -78,7 +78,7 @@ docker exec -it <kafka-container-id> kafka-topics --list \
 
 ---
 
-## 📤 Step 4: Send Messages (Producer)
+## Step 4: Send Messages (Producer)
 
 ```bash
 # Start producer console
@@ -96,7 +96,7 @@ Press `Ctrl+C` to exit.
 
 ---
 
-## 📥 Step 5: Consume Messages
+## Step 5: Consume Messages
 
 Open a new terminal:
 
@@ -112,7 +112,7 @@ You should see your messages!
 
 ---
 
-## 🎯 Mini Project #1: Simple Event Pipeline
+## Mini Project #1: Simple Event Pipeline
 
 **Goal:** Build a basic producer → Kafka → consumer flow
 
@@ -148,7 +148,7 @@ You should see your messages!
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 !!! warning "Common Issues"
     **Port already in use:**

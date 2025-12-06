@@ -1,12 +1,12 @@
 # Chapter 10: Anti-Patterns to Avoid
 
-## 🚨 Common Kafka Mistakes
+## Common Kafka Mistakes
 
 Learn from others' mistakes — avoid these common pitfalls.
 
 ---
 
-## ❌ 1. Too Many Partitions
+## 1. Too Many Partitions
 
 **Problem:** Creating topics with 100+ partitions "just in case"
 
@@ -33,7 +33,7 @@ Learn from others' mistakes — avoid these common pitfalls.
 
 ---
 
-## ❌ 2. One Topic Per Entity Instance
+## 2. One Topic Per Entity Instance
 
 **Problem:** Creating `user-123-events`, `user-456-events`, etc.
 
@@ -51,7 +51,7 @@ Learn from others' mistakes — avoid these common pitfalls.
 
 ---
 
-## ❌ 3. Schema Chaos
+## 3. Schema Chaos
 
 **Problem:** No schema governance, everyone sends random JSON
 
@@ -67,7 +67,7 @@ Learn from others' mistakes — avoid these common pitfalls.
 
 ---
 
-## ❌ 4. Shared State in Consumers
+## 4. Shared State in Consumers
 
 **Problem:** Multiple consumer instances sharing mutable state
 
@@ -88,7 +88,7 @@ for message in consumer:
 
 ---
 
-## ❌ 5. Ignoring Consumer Lag
+## 5. Ignoring Consumer Lag
 
 **Problem:** Not monitoring how far behind consumers are
 
@@ -106,7 +106,7 @@ for message in consumer:
 
 ---
 
-## ❌ 6. Using Kafka as a Database
+## 6. Using Kafka as a Database
 
 **Problem:** Treating Kafka as primary storage
 
@@ -127,7 +127,7 @@ for message in consumer:
 
 ---
 
-## ❌ 7. Large Messages
+## 7. Large Messages
 
 **Problem:** Sending multi-MB messages
 
@@ -143,7 +143,7 @@ for message in consumer:
 
 ---
 
-## ❌ 8. No Error Handling
+## 8. No Error Handling
 
 **Problem:** Assuming messages always process successfully
 
@@ -170,7 +170,7 @@ for message in consumer:
 
 ---
 
-## ✅ Anti-Pattern Checklist
+## Anti-Pattern Checklist
 
 Before going to production, verify:
 

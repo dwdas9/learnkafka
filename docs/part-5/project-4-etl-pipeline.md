@@ -1,15 +1,15 @@
 # Project 4: ETL Pipeline to Data Warehouse
 
-## 🎯 Project Overview
+## Project Overview
 
 Build a CDC-based ETL pipeline using Kafka Connect to stream database changes to a data warehouse.
 
 **Duration:** 3-4 hours  
-**Difficulty:** ⭐⭐⭐☆☆ (Intermediate)
+**Difficulty:** ⭐⭐⭐ (Intermediate)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph LR
@@ -23,7 +23,7 @@ graph LR
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
 - Change Data Capture (CDC)
 - Debezium configuration
@@ -33,7 +33,7 @@ graph LR
 
 ---
 
-## 🔧 Components
+## Components
 
 ### 1. Source: Debezium (MySQL CDC)
 
@@ -71,7 +71,7 @@ graph LR
 
 ---
 
-## 🎯 Pipeline Flow
+## Pipeline Flow
 
 1. Database changes captured by Debezium
 2. CDC events published to Kafka

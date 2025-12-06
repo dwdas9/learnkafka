@@ -1,6 +1,6 @@
 # Chapter 5: Designing Events & Topics for Real Systems
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Event schema design principles
 - Topic naming conventions
@@ -9,7 +9,7 @@
 
 ---
 
-## 📝 Event Schema Design
+## Event Schema Design
 
 ### Anatomy of a Good Event
 
@@ -41,7 +41,7 @@
 
 ---
 
-## 🏷️ Topic Naming Conventions
+## Topic Naming Conventions
 
 ```
 <domain>.<entity>.<event-type>
@@ -55,18 +55,16 @@ Examples:
 
 ---
 
-## 🔑 Choosing Partition Keys
+## Choosing Partition Keys
 
 | Use Case | Key Strategy | Example |
 |----------|--------------|---------|
 | Per-user ordering | `user_id` | All events for user-123 → same partition |
 | Per-order ordering | `order_id` | Order lifecycle events stay together |
 | Load balancing | `null` | Round-robin distribution |
-| Geography | `region` | Events by region |
+| Geography | `region` | Events by region | ---
 
----
-
-## 🎯 Real Example: E-Commerce Order Topic
+## Real Example: E-Commerce Order Topic
 
 *[Content to be expanded with detailed design example]*
 

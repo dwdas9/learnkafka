@@ -1,6 +1,6 @@
 # Chapter 6: Schema Management for Real Teams
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Schema formats (Avro, Protobuf, JSON Schema)
 - Schema Registry usage
@@ -8,17 +8,15 @@
 
 ---
 
-## 📋 Schema Formats Comparison
+## Schema Formats Comparison
 
 | Format | Pros | Cons | Best For |
 |--------|------|------|----------|
 | **Avro** | Compact, built-in evolution | Binary | Data pipelines |
 | **Protobuf** | Fast, language support | Learning curve | Microservices |
-| **JSON Schema** | Human-readable | Larger size | APIs, debugging |
+| **JSON Schema** | Human-readable | Larger size | APIs, debugging | ---
 
----
-
-## 🗄️ Schema Registry
+## Schema Registry
 
 Central repository for managing schemas with versioning.
 
@@ -45,15 +43,15 @@ producer = AvroProducer({
 
 ---
 
-## 🔄 Schema Evolution
+## Schema Evolution
 
-### Compatible Changes ✅
+### Compatible Changes 
 
 - Adding optional fields
 - Adding fields with defaults
 - Removing fields with defaults
 
-### Incompatible Changes ❌
+### Incompatible Changes 
 
 - Removing required fields
 - Changing field types
@@ -61,7 +59,7 @@ producer = AvroProducer({
 
 ---
 
-## 🎯 Mini Project #3: Versioned Events
+## Mini Project #3: Versioned Events
 
 *[Hands-on project with schema evolution]*
 

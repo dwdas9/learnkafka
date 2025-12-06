@@ -1,21 +1,21 @@
 # Part II: Build Applications
 
-## 🏗️ Design, Develop & Deploy Real Kafka Apps
+## Design, Develop & Deploy Real Kafka Apps
 
 Now that you understand the basics, it's time to build **production-grade applications**. This section covers event design, schema management, stream processing, and integrations.
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
-- ✅ Design events and topics for real systems
-- ✅ Manage schemas with Avro, Protobuf, JSON
-- ✅ Build stream processing pipelines
-- ✅ Integrate Kafka with databases and data lakes
+-  Design events and topics for real systems
+-  Manage schemas with Avro, Protobuf, JSON
+-  Build stream processing pipelines
+-  Integrate Kafka with databases and data lakes
 
 ---
 
-## 🗺️ Chapters
+## Chapters
 
 <div class="grid cards" markdown>
 
@@ -55,7 +55,7 @@ Now that you understand the basics, it's time to build **production-grade applic
 
 ---
 
-## 🎯 Hands-On Projects
+## Hands-On Projects
 
 !!! example "Mini Project #3: Versioned Events"
     **Goal:** Evolve schemas without breaking consumers

@@ -1,6 +1,6 @@
 # Chapter 7: Stream Processing that Matters
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Kafka Streams fundamentals
 - KStream vs KTable
@@ -9,7 +9,7 @@
 
 ---
 
-## 🌊 Kafka Streams Basics
+## Kafka Streams Basics
 
 Kafka Streams = Library for building stream processing apps on Kafka.
 
@@ -27,15 +27,13 @@ highValue.to("high-value-orders");
 
 ---
 
-## 📊 KStream vs KTable
+## KStream vs KTable
 
 | KStream | KTable |
 |---------|--------|
 | Event log | Changelog (state) |
 | Insert-only | Upserts (latest value) |
-| All events matter | Current state matters |
-
----
+| All events matter | Current state matters | ---
 
 ## ⏰ Windowing
 
@@ -60,7 +58,7 @@ KTable<Windowed<String>, Long> ordersPerHour = orders
 
 ---
 
-## 🎯 Mini Project #4: Fraud Detection Pipeline
+## Mini Project #4: Fraud Detection Pipeline
 
 **Goal:** Detect suspicious patterns in transactions
 

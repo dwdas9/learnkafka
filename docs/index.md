@@ -1,4 +1,4 @@
-# 📘 Apache Kafka for Builders
+# Apache Kafka for Builders
 
 ## *Architect, Develop & Deploy Real-Time Apps*
 
@@ -6,7 +6,7 @@ Welcome to the most practical, hands-on guide to Apache Kafka. This course is de
 
 ---
 
-## 🎯 What Makes This Different?
+## What Makes This Different?
 
 !!! tip "Learning Philosophy"
     - **Build first, theory second** — Every concept is tied to a real project
@@ -16,7 +16,7 @@ Welcome to the most practical, hands-on guide to Apache Kafka. This course is de
 
 ---
 
-## 📚 Course Structure
+## Course Structure
 
 <div class="grid cards" markdown>
 
@@ -64,7 +64,7 @@ Welcome to the most practical, hands-on guide to Apache Kafka. This course is de
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 New to Kafka? Start here:
 
@@ -80,7 +80,7 @@ Already know the basics? Jump to:
 
 ---
 
-## 💡 Who This Is For
+## Who This Is For
 
 === "Backend Developers"
     Build event-driven microservices and streaming pipelines
@@ -96,21 +96,19 @@ Already know the basics? Jump to:
 
 ---
 
-## 🛠️ What You'll Build
+## What You'll Build
 
 Throughout this course, you'll build **5 production-grade projects**:
 
 | Project | Skills Learned |
 |---------|---------------|
-| 🛒 **Real-time Order Tracking** | Producers, Consumers, Topics |
-| 📦 **Inventory Sync System** | Event-driven Microservices |
-| 🔍 **Fraud Detection Pipeline** | Kafka Streams, Windowing |
-| 🗄️ **Data Warehouse ETL** | Kafka Connect, Integrations |
-| 📊 **Clickstream Analytics** | End-to-end Real-time Pipeline |
+| **Real-time Order Tracking** | Producers, Consumers, Topics |
+| **Inventory Sync System** | Event-driven Microservices |
+| **Fraud Detection Pipeline** | Kafka Streams, Windowing |
+| **Data Warehouse ETL** | Kafka Connect, Integrations |
+| **Clickstream Analytics** | End-to-end Real-time Pipeline | ---
 
----
-
-## 📖 How to Use This Guide
+## How to Use This Guide
 
 !!! note "Recommended Path"
     **For Beginners:** Follow the course sequentially from Part I → Part V
@@ -121,7 +119,7 @@ Throughout this course, you'll build **5 production-grade projects**:
 
 ---
 
-## 🤝 Prerequisites
+## Prerequisites
 
 - Basic programming knowledge (Java or Python preferred)
 - Understanding of REST APIs and databases
@@ -132,7 +130,7 @@ No prior Kafka knowledge required!
 
 ---
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 By the end of this course, you will:
 
@@ -154,6 +152,6 @@ By the end of this course, you will:
 
 ---
 
-## 📬 Stay Connected
+## Stay Connected
 
 Found this helpful? Star the repo on [GitHub](https://github.com/dwdas9/learnkafka) and share with your team!

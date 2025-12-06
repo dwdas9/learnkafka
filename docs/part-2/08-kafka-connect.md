@@ -1,6 +1,6 @@
 # Chapter 8: Kafka Connect — Real Integrations
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Kafka Connect fundamentals
 - Source vs Sink connectors
@@ -8,7 +8,7 @@
 
 ---
 
-## 🔌 What is Kafka Connect?
+## What is Kafka Connect?
 
 Framework for streaming data between Kafka and external systems **without writing code**.
 
@@ -18,7 +18,7 @@ Database → Source Connector → Kafka → Sink Connector → Data Lake
 
 ---
 
-## 📥 Source Connectors
+## Source Connectors
 
 Pull data **into** Kafka from external systems.
 
@@ -40,7 +40,7 @@ Pull data **into** Kafka from external systems.
 
 ---
 
-## 📤 Sink Connectors
+## Sink Connectors
 
 Push data **from** Kafka to external systems.
 
@@ -62,7 +62,7 @@ Push data **from** Kafka to external systems.
 
 ---
 
-## 🚀 Popular Connectors
+## Popular Connectors
 
 | Connector | Type | Use Case |
 |-----------|------|----------|
@@ -70,11 +70,9 @@ Push data **from** Kafka to external systems.
 | S3 | Sink | Data lake |
 | Elasticsearch | Sink | Search indexing |
 | MongoDB | Source/Sink | NoSQL integration |
-| Debezium | Source | CDC (Change Data Capture) |
+| Debezium | Source | CDC (Change Data Capture) | ---
 
----
-
-## 🛠️ Running Connect
+## Running Connect
 
 ```bash
 # Start Kafka Connect
@@ -91,7 +89,7 @@ curl -X POST http://localhost:8083/connectors \
 
 ---
 
-## 🎯 Real Example: DB → Kafka → Elasticsearch
+## Real Example: DB → Kafka → Elasticsearch
 
 *[Complete ETL pipeline example]*
 

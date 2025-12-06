@@ -1,12 +1,12 @@
 # Chapter 9: Design Patterns
 
-## 🎯 Essential Kafka Design Patterns
+## Essential Kafka Design Patterns
 
 Learn battle-tested patterns for building robust event-driven systems.
 
 ---
 
-## 🔄 1. Event-Driven Microservices
+## 1. Event-Driven Microservices
 
 Services communicate through events, not direct calls.
 
@@ -22,7 +22,7 @@ graph LR
 
 ---
 
-## 📢 2. Fan-Out Pattern
+## 2. Fan-Out Pattern
 
 One event triggers multiple independent actions.
 
@@ -38,7 +38,7 @@ Order Created Event
 
 ---
 
-## 📥 3. Fan-In Pattern
+## 3. Fan-In Pattern
 
 Multiple events aggregate into one stream.
 
@@ -52,7 +52,7 @@ Purchases (Topic 3)
 
 ---
 
-## ⚰️ 4. Dead Letter Queue (DLQ)
+## 4. Dead Letter Queue (DLQ)
 
 Failed messages go to a separate topic for later analysis.
 
@@ -71,7 +71,7 @@ except Exception as e:
 
 ---
 
-## ⏮️ 5. Event Replay Pattern
+## ⏮ 5. Event Replay Pattern
 
 Reprocess historical events (like rewinding a DVR).
 
@@ -90,7 +90,7 @@ kafka-consumer-groups --bootstrap-server localhost:9092 \
 
 ---
 
-## 💬 6. Request-Reply with Kafka
+## 6. Request-Reply with Kafka
 
 Implement synchronous-style communication over Kafka.
 
@@ -113,7 +113,7 @@ for msg in consumer:
 
 ---
 
-## 🎓 Pattern Selection Guide
+## Pattern Selection Guide
 
 | Pattern | Use When | Avoid When |
 |---------|----------|------------|
@@ -121,9 +121,7 @@ for msg in consumer:
 | Fan-Out | Multiple downstream actions | Tightly coupled logic |
 | Fan-In | Aggregate from many sources | Single source sufficient |
 | DLQ | Transient failures expected | Errors are show-stoppers |
-| Replay | Events are immutable | Data privacy concerns |
-
----
+| Replay | Events are immutable | Data privacy concerns | ---
 
 <div class="result" markdown>
 

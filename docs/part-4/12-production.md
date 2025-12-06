@@ -1,12 +1,12 @@
 # Chapter 12: Running Kafka in Production
 
-## 🚀 Deployment Options
+## Deployment Options
 
 Choose the right deployment model for your needs.
 
 ---
 
-## ☁️ 1. Managed Services (Easiest)
+## 1. Managed Services (Easiest)
 
 ### Confluent Cloud
 
@@ -39,7 +39,7 @@ Choose the right deployment model for your needs.
 
 ---
 
-## 🖥️ 2. Self-Managed on VMs
+## 2. Self-Managed on VMs
 
 ### Architecture
 
@@ -67,7 +67,7 @@ Load Balancer
 
 ---
 
-## ☸️ 3. Kubernetes Deployment
+## 3. Kubernetes Deployment
 
 ### Using Strimzi Operator
 
@@ -106,7 +106,7 @@ spec:
 
 ---
 
-## 📏 Capacity Planning
+## Capacity Planning
 
 ### Calculator
 
@@ -130,11 +130,9 @@ print(f"Required disk space: {total_disk_gb:.2f} GB")
 |----------|---------|--------------|------------|-------------|
 | **Small** | 3 | 4 | 8 GB | 500 GB |
 | **Medium** | 5 | 8 | 16 GB | 1 TB |
-| **Large** | 7+ | 16+ | 32 GB+ | 2+ TB SSD |
+| **Large** | 7+ | 16+ | 32 GB+ | 2+ TB SSD | ---
 
----
-
-## 🔧 Production Configuration
+## Production Configuration
 
 ### Broker Config (`server.properties`)
 
@@ -169,7 +167,7 @@ compression.type=producer
 
 ---
 
-## 🎯 Deployment Checklist
+## Deployment Checklist
 
 !!! success "Pre-Production"
     - [ ] Minimum 3 brokers for HA

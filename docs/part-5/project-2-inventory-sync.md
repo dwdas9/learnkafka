@@ -1,15 +1,15 @@
 # Project 2: Inventory Sync Across Microservices
 
-## 🎯 Project Overview
+## Project Overview
 
 Build an event-driven inventory management system where multiple microservices stay in sync through Kafka events.
 
 **Duration:** 3-4 hours  
-**Difficulty:** ⭐⭐⭐☆☆ (Intermediate)
+**Difficulty:** ⭐⭐⭐ (Intermediate)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -23,7 +23,7 @@ graph TB
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
 - Event-driven choreography
 - Saga pattern for distributed transactions
@@ -33,7 +33,7 @@ graph TB
 
 ---
 
-## 💻 Implementation
+## Implementation
 
 ### Events
 
@@ -51,7 +51,7 @@ graph TB
 
 ---
 
-## 🎯 Challenges
+## Challenges
 
 - Handle concurrent reservations
 - Implement idempotency (same request twice)

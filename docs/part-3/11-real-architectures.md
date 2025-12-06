@@ -1,12 +1,12 @@
 # Chapter 11: Real-World Architectures
 
-## 🏗️ Production System Designs
+## Production System Designs
 
 Study battle-tested architectures from real companies.
 
 ---
 
-## 💳 1. Payment Processing System
+## 1. Payment Processing System
 
 ```mermaid
 graph TB
@@ -32,7 +32,7 @@ graph TB
 
 ---
 
-## 🚗 2. Ride-Hailing Event Platform
+## 2. Ride-Hailing Event Platform
 
 ```mermaid
 graph LR
@@ -76,7 +76,7 @@ graph LR
 
 ---
 
-## 📊 3. Clickstream Analytics Platform
+## 3. Clickstream Analytics Platform
 
 ```mermaid
 graph TB
@@ -99,7 +99,7 @@ graph TB
 
 ---
 
-## 🏭 4. IoT Data Ingestion Pipeline
+## 4. IoT Data Ingestion Pipeline
 
 ```mermaid
 graph TB
@@ -142,7 +142,7 @@ graph TB
 
 ---
 
-## 🏦 5. Data Lake Ingestion
+## 5. Data Lake Ingestion
 
 ```mermaid
 graph LR
@@ -178,7 +178,7 @@ graph LR
 
 ---
 
-## 📈 Architecture Decision Guide
+## Architecture Decision Guide
 
 | Requirement | Pattern | Example |
 |-------------|---------|---------|
@@ -186,11 +186,9 @@ graph LR
 | **Strict ordering** | Single partition or keyed | Payments |
 | **Geographic distribution** | Multi-cluster replication | Ride-hailing |
 | **Complex processing** | Kafka Streams | Fraud detection |
-| **Integration-heavy** | Kafka Connect | Data lake |
+| **Integration-heavy** | Kafka Connect | Data lake | ---
 
----
-
-## 🎓 Key Takeaways
+## Key Takeaways
 
 !!! tip "Lessons from Production"
     1. **Start simple, scale as needed**

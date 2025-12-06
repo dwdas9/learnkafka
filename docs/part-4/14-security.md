@@ -1,12 +1,12 @@
 # Chapter 14: Security Without Complexity
 
-## 🔒 Essential Kafka Security
+## Essential Kafka Security
 
 Secure your Kafka cluster without over-engineering.
 
 ---
 
-## 🎯 Security Layers
+## Security Layers
 
 ```
 ┌─────────────────────────────────────┐
@@ -20,7 +20,7 @@ Secure your Kafka cluster without over-engineering.
 
 ---
 
-## 🔐 1. SSL/TLS Encryption
+## 1. SSL/TLS Encryption
 
 Encrypt data in transit.
 
@@ -72,7 +72,7 @@ producer = KafkaProducer(
 
 ---
 
-## 👤 2. Authentication (SASL)
+## 2. Authentication (SASL)
 
 Verify user identity.
 
@@ -127,7 +127,7 @@ kafka-configs --bootstrap-server localhost:9092 \
 
 ---
 
-## 🛡️ 3. ACLs (Authorization)
+## 3. ACLs (Authorization)
 
 Control who can do what.
 
@@ -160,7 +160,7 @@ kafka-acls --bootstrap-server localhost:9092 \
 
 ---
 
-## 🏢 Practical Security Policies
+## Practical Security Policies
 
 ### Microservices Pattern
 
@@ -181,7 +181,7 @@ kafka-acls --add --allow-principal User:inventory-service \
 
 ---
 
-## 🔍 Security Checklist
+## Security Checklist
 
 !!! success "Production Security"
     - [ ] SSL/TLS enabled for all connections
@@ -195,7 +195,7 @@ kafka-acls --add --allow-principal User:inventory-service \
 
 ---
 
-## 🚀 Quick Start: Secure Kafka with Docker
+## Quick Start: Secure Kafka with Docker
 
 ```yaml
 version: '3.8'

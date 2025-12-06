@@ -1,12 +1,12 @@
 # Part IV: Deploy & Run in Production
 
-## 🚀 Run Kafka at Scale
+## Run Kafka at Scale
 
 Learn deployment, monitoring, security, and optimization for production environments.
 
 ---
 
-## 🗺️ Chapters
+## Chapters
 
 <div class="grid cards" markdown>
 

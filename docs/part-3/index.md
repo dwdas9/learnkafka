@@ -1,12 +1,12 @@
 # Part III: Architect Like a Pro
 
-## 🏛️ Patterns, Anti-Patterns & Real Architectures
+## Patterns, Anti-Patterns & Real Architectures
 
 Learn to design production-grade systems with battle-tested patterns and avoid common pitfalls.
 
 ---
 
-## 🗺️ Chapters
+## Chapters
 
 <div class="grid cards" markdown>
 

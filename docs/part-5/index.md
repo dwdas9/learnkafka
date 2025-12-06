@@ -1,12 +1,12 @@
 # Part V: Learn by Building
 
-## 🛠️ 5 Production-Grade Projects
+## 5 Production-Grade Projects
 
 Each project includes architecture diagrams, complete code, and Docker Compose files.
 
 ---
 
-## 🎯 Projects Overview
+## Projects Overview
 
 | # | Project | Duration | What You'll Learn |
 |---|---------|----------|-------------------|
@@ -14,24 +14,22 @@ Each project includes architecture diagrams, complete code, and Docker Compose f
 | 2 | **[Inventory Sync System](project-2-inventory-sync.md)** | 3-4 hours | Event-driven microservices, choreography |
 | 3 | **[Fraud Analytics Pipeline](project-3-fraud-analytics.md)** | 4-5 hours | Kafka Streams, windowing, aggregations |
 | 4 | **[ETL to Data Warehouse](project-4-etl-pipeline.md)** | 3-4 hours | Kafka Connect, database sync, S3 |
-| 5 | **[Clickstream Analytics](project-5-clickstream.md)** | 4-5 hours | End-to-end pipeline, dashboards |
+| 5 | **[Clickstream Analytics](project-5-clickstream.md)** | 4-5 hours | End-to-end pipeline, dashboards | ---
 
----
-
-## 📦 What's Included
+## What's Included
 
 Each project provides:
 
-- ✅ **Architecture diagrams** (system design)
-- ✅ **Complete source code** (Java/Python)
-- ✅ **Docker Compose setup** (run everything locally)
-- ✅ **Step-by-step guide** (build it yourself)
-- ✅ **Testing scenarios** (verify it works)
-- ✅ **Extension ideas** (take it further)
+-  **Architecture diagrams** (system design)
+-  **Complete source code** (Java/Python)
+-  **Docker Compose setup** (run everything locally)
+-  **Step-by-step guide** (build it yourself)
+-  **Testing scenarios** (verify it works)
+-  **Extension ideas** (take it further)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 <div class="grid cards" markdown>
 
@@ -79,7 +77,7 @@ Each project provides:
 
 ---
 
-## 💡 Recommended Approach
+## Recommended Approach
 
 !!! tip "How to Use These Projects"
     1. **Read the architecture** first to understand the design

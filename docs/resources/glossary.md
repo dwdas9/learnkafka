@@ -1,6 +1,6 @@
 # Glossary
 
-## 📖 Kafka Terminology
+## Kafka Terminology
 
 Quick reference for Kafka concepts and terms.
 

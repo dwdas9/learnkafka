@@ -1,10 +1,10 @@
 # Tools & Links
 
-## 🛠️ Essential Kafka Tools
+## Essential Kafka Tools
 
 ---
 
-## 🖥️ GUI Tools
+## GUI Tools
 
 ### Kafka UI (Recommended)
 
@@ -47,7 +47,7 @@ Desktop GUI for Kafka management.
 
 ---
 
-## 📊 Monitoring
+## Monitoring
 
 ### Prometheus + Grafana
 
@@ -82,7 +82,7 @@ LinkedIn's consumer lag monitoring.
 
 ---
 
-## 🔌 Kafka Connect
+## Kafka Connect
 
 ### Connector Hub
 
@@ -99,17 +99,15 @@ Browse 200+ connectors.
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 | Resource | Link |
 |----------|------|
 | **Apache Kafka Docs** | [kafka.apache.org](https://kafka.apache.org/documentation/) |
 | **Confluent Docs** | [docs.confluent.io](https://docs.confluent.io/) |
-| **Kafka Improvement Proposals (KIPs)** | [KIP List](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals) |
+| **Kafka Improvement Proposals (KIPs)** | [KIP List](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals) | ---
 
----
-
-## 🎓 Learning Resources
+## Learning Resources
 
 ### Online Courses
 
@@ -129,7 +127,7 @@ Browse 200+ connectors.
 
 ---
 
-## 💻 Client Libraries
+## Client Libraries
 
 | Language | Library | Link |
 |----------|---------|------|
@@ -138,11 +136,9 @@ Browse 200+ connectors.
 | **Go** | Sarama | [GitHub](https://github.com/Shopify/sarama) |
 | **Node.js** | KafkaJS | [npm](https://www.npmjs.com/package/kafkajs) |
 | **C#** | Confluent.Kafka | [NuGet](https://www.nuget.org/packages/Confluent.Kafka) |
-| **Rust** | rust-rdkafka | [crates.io](https://crates.io/crates/rdkafka) |
+| **Rust** | rust-rdkafka | [crates.io](https://crates.io/crates/rdkafka) | ---
 
----
-
-## ☁️ Managed Services
+## Managed Services
 
 | Provider | Service | Link |
 |----------|---------|------|
@@ -150,11 +146,9 @@ Browse 200+ connectors.
 | **AWS** | Amazon MSK | [aws.amazon.com/msk](https://aws.amazon.com/msk/) |
 | **Azure** | Azure Event Hubs | [azure.microsoft.com/event-hubs](https://azure.microsoft.com/en-us/services/event-hubs/) |
 | **Google Cloud** | N/A | Use self-managed on GKE |
-| **Aiven** | Aiven for Kafka | [aiven.io/kafka](https://aiven.io/kafka) |
+| **Aiven** | Aiven for Kafka | [aiven.io/kafka](https://aiven.io/kafka) | ---
 
----
-
-## 🐳 Docker Images
+## Docker Images
 
 ```bash
 # Official Kafka
@@ -169,7 +163,7 @@ docker pull bitnami/kafka:latest
 
 ---
 
-## 🌐 Community
+## Community
 
 - [Kafka Users Mailing List](https://lists.apache.org/list.html?users@kafka.apache.org)
 - [Stack Overflow [apache-kafka]](https://stackoverflow.com/questions/tagged/apache-kafka)

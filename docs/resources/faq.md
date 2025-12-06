@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-## 🤔 Common Kafka Questions
+## Common Kafka Questions
 
 ---
 
@@ -48,18 +48,16 @@
 | Feature | Kafka | RabbitMQ |
 |---------|-------|----------|
 | **Use Case** | Event streaming, high throughput | Task queues, complex routing |
-| **Replay** | ✅ Yes | ❌ No |
+| **Replay** | Yes | No |
 | **Throughput** | Very high (100K+ msg/s) | Moderate (10K msg/s) |
 | **Ordering** | Per partition | Per queue |
-| **Best For** | Event logs, analytics | Work distribution |
-
-**TLDR:** Use Kafka for event streaming, RabbitMQ for task queues.
+| **Best For** | Event logs, analytics | Work distribution | **TLDR:** Use Kafka for event streaming, RabbitMQ for task queues.
 
 ---
 
 ### Q: Can I use Kafka as a database?
 
-**A:** ❌ **No.** Kafka is not a database.
+**A:**  **No.** Kafka is not a database.
 
 **Use Kafka for:**
 - Streaming data
@@ -85,8 +83,8 @@ kafka-consumer-groups --bootstrap-server localhost:9092 \
 ```
 
 **Alert thresholds:**
-- ⚠️ Warning: Lag > 10,000 messages
-- 🚨 Critical: Lag > 100,000 or increasing consistently
+-  Warning: Lag > 10,000 messages
+-  Critical: Lag > 100,000 or increasing consistently
 
 ---
 
@@ -151,9 +149,7 @@ log.retention.hours=-1
 | Guarantee | Behavior | Use When |
 |-----------|----------|----------|
 | **At-least-once** | May process duplicates | Most cases (default) |
-| **Exactly-once** | No duplicates | Financial transactions |
-
-**At-least-once (default):**
+| **Exactly-once** | No duplicates | Financial transactions | **At-least-once (default):**
 ```python
 for msg in consumer:
     process(msg)
@@ -259,9 +255,7 @@ producer = KafkaProducer(
 |---------|---------------|-------|
 | **Setup** | Library (no cluster) | Requires cluster |
 | **Use Case** | Kafka-native pipelines | Complex CEP |
-| **Learning Curve** | Easy | Steep |
-
-**Use Kafka Streams** for simple transformations/aggregations.
+| **Learning Curve** | Easy | Steep | **Use Kafka Streams** for simple transformations/aggregations.
 
 **Use Flink** for complex multi-source processing.
 
@@ -277,7 +271,7 @@ producer = KafkaProducer(
 kafka-topics --alter --topic my-topic --partitions 10
 ```
 
-⚠️ **Warning:** Existing keyed messages won't move partitions.
+ **Warning:** Existing keyed messages won't move partitions.
 
 ---
 

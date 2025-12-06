@@ -1,6 +1,6 @@
 # Project 5: Clickstream Analytics Dashboard
 
-## 🎯 Project Overview
+## Project Overview
 
 Build an end-to-end clickstream analytics pipeline from web tracking to real-time dashboard.
 
@@ -9,7 +9,7 @@ Build an end-to-end clickstream analytics pipeline from web tracking to real-tim
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -25,7 +25,7 @@ graph TB
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
 - High-volume event ingestion
 - Stream enrichment (joining streams)
@@ -35,7 +35,7 @@ graph TB
 
 ---
 
-## 📊 Metrics to Track
+## Metrics to Track
 
 1. **Page Views** — Total and per page
 2. **Unique Users** — Daily/hourly active users
@@ -46,7 +46,7 @@ graph TB
 
 ---
 
-## 💻 Implementation Highlights
+## Implementation Highlights
 
 ### Click Event Schema
 
@@ -81,7 +81,7 @@ KTable<Windowed<String>, Long> sessions = clicks
 
 ---
 
-## 🎯 Success Criteria
+## Success Criteria
 
 - [ ] Ingest 1000+ clicks/sec
 - [ ] Real-time dashboard updates

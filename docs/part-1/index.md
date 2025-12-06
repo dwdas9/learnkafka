@@ -1,24 +1,24 @@
 # Part I: Start Fast & Build Something
 
-## 🚀 Get Productive with Kafka Quickly
+## Get Productive with Kafka Quickly
 
-This section is designed to get you from **zero to building** in the shortest time possible. No theory overload — just the essentials you need to start creating real Kafka applications.
+This section is designed to get you from **zero to building** in the shortest time possible. No theory overload - just the essentials you need to start creating real Kafka applications.
 
 ---
 
-## 📋 What You'll Learn
+## What You'll Learn
 
 By the end of Part I, you will:
 
-- ✅ Understand **why Kafka exists** and when to use it
-- ✅ Master the **core concepts** (topics, partitions, producers, consumers)
-- ✅ Have Kafka **running locally** via Docker
-- ✅ Build your **first producer and consumer** in code
-- ✅ Complete **2 hands-on mini-projects**
+- Understand **why Kafka exists** and when to use it
+- Master the **core concepts** (topics, partitions, producers, consumers)
+- Have Kafka **running locally** via Docker
+- Build your **first producer and consumer** in code
+- Complete **2 hands-on mini-projects**
 
 ---
 
-## 🗺️ Chapters
+## Chapters
 
 <div class="grid cards" markdown>
 
@@ -58,7 +58,7 @@ By the end of Part I, you will:
 
 ---
 
-## 🎯 Hands-On Projects
+## Hands-On Projects
 
 Each chapter includes practical exercises, culminating in these mini-projects:
 
@@ -78,7 +78,7 @@ Each chapter includes practical exercises, culminating in these mini-projects:
 
 ---
 
-## ⏱️ Time Commitment
+## Time Commitment
 
 - **Reading:** ~2 hours
 - **Hands-on Labs:** ~2 hours
@@ -86,7 +86,7 @@ Each chapter includes practical exercises, culminating in these mini-projects:
 
 ---
 
-## 🎓 Prerequisites
+## Prerequisites
 
 - Basic programming knowledge
 - Docker installed

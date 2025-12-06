@@ -1,12 +1,12 @@
 # Chapter 15: Scaling & Optimization
 
-## 📈 Scale Kafka for Production Workloads
+## Scale Kafka for Production Workloads
 
 Tune only what matters for performance.
 
 ---
 
-## 🎯 Performance Tuning Priorities
+## Performance Tuning Priorities
 
 1. **Partitions** (biggest impact)
 2. **Batching** (producer/consumer)
@@ -15,7 +15,7 @@ Tune only what matters for performance.
 
 ---
 
-## 📊 1. Partition Strategy
+## 1. Partition Strategy
 
 ### Scaling Throughput
 
@@ -47,7 +47,7 @@ kafka-topics --alter --topic orders \
 
 ---
 
-## 🚀 2. Producer Optimization
+## 2. Producer Optimization
 
 ### Batching (Biggest Win)
 
@@ -73,12 +73,10 @@ producer = KafkaProducer(
 
 | Compression | Speed | Ratio | CPU |
 |-------------|-------|-------|-----|
-| **snappy** | ⚡⚡⚡ | 🗜️ | Low |
-| **lz4** | ⚡⚡⚡ | 🗜️🗜️ | Low |
-| **gzip** | ⚡ | 🗜️🗜️🗜️ | High |
-| **zstd** | ⚡⚡ | 🗜️🗜️🗜️ | Medium |
-
-**Recommendation:** `snappy` or `lz4` for most cases
+| **snappy** | | | Low |
+| **lz4** | | | Low |
+| **gzip** | | | High |
+| **zstd** | | | Medium | **Recommendation:** `snappy` or `lz4` for most cases
 
 ---
 
@@ -101,7 +99,7 @@ producer = KafkaProducer(
 
 ---
 
-## 📥 3. Consumer Optimization
+## 3. Consumer Optimization
 
 ### Batching
 
@@ -142,7 +140,7 @@ for message in consumer:
 
 ---
 
-## 💾 4. Broker Tuning
+## 4. Broker Tuning
 
 ### Disk Performance
 
@@ -173,7 +171,7 @@ num.network.threads=8
 
 ---
 
-## 🔄 5. Avoiding Rebalance Pain
+## 5. Avoiding Rebalance Pain
 
 ### Problem: Rebalancing Slows Everything
 
@@ -208,7 +206,7 @@ consumer = KafkaConsumer(
 
 ---
 
-## 🗄️ 6. Tiered Storage (Kafka 3.6+)
+## 6. Tiered Storage (Kafka 3.6+)
 
 Offload old data to cheaper storage (S3/Azure Blob).
 
@@ -229,7 +227,7 @@ log.local.retention.ms=86400000
 
 ---
 
-## 📊 Performance Benchmarking
+## Performance Benchmarking
 
 ### Test Producer Throughput
 
@@ -255,7 +253,7 @@ kafka-consumer-perf-test \
 
 ---
 
-## 🎯 Scaling Checklist
+## Scaling Checklist
 
 !!! success "Before Scaling"
     - [ ] Identify bottleneck (producer, consumer, broker, disk)
@@ -267,16 +265,14 @@ kafka-consumer-perf-test \
 
 ---
 
-## 📈 Scale Milestones
+## Scale Milestones
 
 | Throughput | Brokers | Partitions/Topic | Notes |
 |------------|---------|------------------|-------|
 | **< 10 MB/s** | 3 | 3-6 | Small deployment |
 | **10-100 MB/s** | 5-7 | 10-20 | Medium scale |
 | **100 MB/s - 1 GB/s** | 10+ | 30-50 | Large scale |
-| **> 1 GB/s** | 20+ | 100+ | Enterprise |
-
----
+| **> 1 GB/s** | 20+ | 100+ | Enterprise | ---
 
 <div class="result" markdown>
 

@@ -1,12 +1,12 @@
 # Chapter 13: Monitoring & Troubleshooting
 
-## 📊 Metrics That Matter
+## Metrics That Matter
 
 Focus on the metrics that actually indicate problems.
 
 ---
 
-## 🎯 Critical Metrics
+## Critical Metrics
 
 ### 1. Consumer Lag
 
@@ -19,8 +19,8 @@ kafka-consumer-groups --bootstrap-server localhost:9092 \
 
 # Output:
 # TOPIC    PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG
-# orders   0          1000           1500            500  ⚠️ Behind!
-# orders   1          2000           2000            0    ✅ Caught up
+# orders   0          1000           1500            500   Behind!
+# orders   1          2000           2000            0     Caught up
 ```
 
 !!! danger "When to Alert"
@@ -37,9 +37,7 @@ kafka-consumer-groups --bootstrap-server localhost:9092 \
 | **CPU Usage** | > 70% | > 90% |
 | **Disk Usage** | > 70% | > 85% |
 | **Network I/O** | Near saturation | Saturated |
-| **Under-Replicated Partitions** | > 0 | > 10 |
-
----
+| **Under-Replicated Partitions** | > 0 | > 10 | ---
 
 ### 3. Producer Metrics
 
@@ -56,7 +54,7 @@ metrics = producer.metrics()
 
 ---
 
-## 📈 Monitoring Stack
+## Monitoring Stack
 
 ### Prometheus + Grafana
 
@@ -89,7 +87,7 @@ services:
 
 ---
 
-## 🔍 Debugging Consumer Lag
+## Debugging Consumer Lag
 
 ### Lag Investigation Steps
 
@@ -123,7 +121,7 @@ services:
 
 ---
 
-## 🚨 Common Issues & Solutions
+## Common Issues & Solutions
 
 ### Issue 1: Slow Consumer
 
@@ -203,7 +201,7 @@ consumer = KafkaConsumer(
 
 ---
 
-## 🎯 At-Least-Once vs Exactly-Once
+## At-Least-Once vs Exactly-Once
 
 ### At-Least-Once (Default)
 
@@ -241,7 +239,7 @@ except:
 
 ---
 
-## 🎓 Monitoring Checklist
+## Monitoring Checklist
 
 !!! success "Essential Monitoring"
     - [ ] Consumer lag alerts
