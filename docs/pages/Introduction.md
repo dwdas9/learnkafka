@@ -55,7 +55,7 @@ A **Producer** is **not** the data source.
 
 **Simply put:** The Producer is the program you write with access to your Kafka system, not the external website.
 
-![](images/20251205220912.png)
+![alt text](images/20251206212559.jpg)
 
 Let's look at some examples of Kafka Producer Scripts:
 

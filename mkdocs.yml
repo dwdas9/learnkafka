@@ -1,8 +1,9 @@
-site_name: Learn Kafka
-site_description: A comprehensive guide to learning Apache Kafka
+site_name: Apache Kafka for Builders
+site_description: Architect, Develop & Deploy Real-Time Apps with Apache Kafka
 site_author: dwdas9
 repo_url: https://github.com/dwdas9/learnkafka
-repo_name: learnkafka
+repo_name: dwdas9/learnkafka
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -10,32 +11,132 @@ theme:
   favicon: assets/favicon.ico
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
     - search.suggest
     - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-4
         name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dwdas9/learnkafka
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/dwdas9
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
 
 nav:
   - Home: index.md
-  - Example Page: pages/example.md
+  - Getting Started:
+      - Introduction: getting-started/introduction.md
+      - Why Kafka?: getting-started/why-kafka.md
+      - Core Concepts: getting-started/core-concepts.md
+      - Quick Setup: getting-started/quick-setup.md
+  
+  - Part I - Start Fast:
+      - part-1/index.md
+      - Why Kafka?: part-1/01-why-kafka.md
+      - Core Concepts: part-1/02-core-concepts.md
+      - 10-Min Setup: part-1/03-setup.md
+      - Programming Kafka: part-1/04-programming.md
+  
+  - Part II - Build Apps:
+      - part-2/index.md
+      - Event Design: part-2/05-event-design.md
+      - Schema Management: part-2/06-schema-management.md
+      - Stream Processing: part-2/07-stream-processing.md
+      - Kafka Connect: part-2/08-kafka-connect.md
+  
+  - Part III - Architecture:
+      - part-3/index.md
+      - Design Patterns: part-3/09-design-patterns.md
+      - Anti-Patterns: part-3/10-anti-patterns.md
+      - Real Architectures: part-3/11-real-architectures.md
+  
+  - Part IV - Production:
+      - part-4/index.md
+      - Running in Prod: part-4/12-production.md
+      - Monitoring: part-4/13-monitoring.md
+      - Security: part-4/14-security.md
+      - Scaling: part-4/15-scaling.md
+  
+  - Part V - Projects:
+      - part-5/index.md
+      - Order Tracking: part-5/project-1-order-tracking.md
+      - Inventory Sync: part-5/project-2-inventory-sync.md
+      - Fraud Analytics: part-5/project-3-fraud-analytics.md
+      - ETL Pipeline: part-5/project-4-etl-pipeline.md
+      - Clickstream: part-5/project-5-clickstream.md
+  
+  - Resources:
+      - Cheat Sheets: resources/cheat-sheets.md
+      - Tools & Links: resources/tools.md
+      - FAQ: resources/faq.md
+      - Glossary: resources/glossary.md
 
 markdown_extensions:
   - toc:
       permalink: true
+      title: On this page
   - admonition
-  - codehilite
-  - footnotes
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
+  - def_list
+  - footnotes
+  - abbr
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: en
+  - glightbox
